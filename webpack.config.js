@@ -14,7 +14,7 @@ const config = {
         rules: [
             { test: /\.vue$/, loader: 'vue-loader', },
             { test: /\.css$/, use: [ 'vue-style-loader', 'css-loader', ], },
-            { test: /\.(png|jpg|ico)$/, loader: 'url-loader', },
+            { test: /\.(png|jpg|ico|mkv|m4a)$/, loader: 'url-loader?limit=10240', },
         ],
     },
     plugins: [ new VueLoaderPlugin(), ],
